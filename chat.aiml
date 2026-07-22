@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+    <category>
+        <pattern>HI</pattern>
+        <template>
+            <random>
+                <li>Hi there! Ask me anything about the family tree.</li>
+                <li>Hello! I'm ready to answer your family queries.</li>
+                <li>Hey! What would you like to know about the family?</li>
+                <li>Hi! Go ahead, ask me about any family member.</li>
+                <li>Hello there! Family knowledge base is at your service.</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HELLO</pattern>
+        <template>
+            <random>
+                <li>Hello! What family relation would you like to know about?</li>
+                <li>Hey there! Ask me about any family member.</li>
+                <li>Hi! I know everything about this family. Ask away!</li>
+                <li>Hello! Ready to explore the family tree?</li>
+                <li>Greetings! What can I help you with today?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HEY</pattern>
+        <template>
+            <random>
+                <li>Hey! Ask me about any family member or relation.</li>
+                <li>Hey there! What do you want to know?</li>
+                <li>Hi! Fire away with your family questions.</li>
+                <li>Hey! I am here to help with family queries.</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SALAM</pattern>
+        <template>
+            <random>
+                <li>Walaikum Assalam! Kya jaanna chahte ho family ke baare mein?</li>
+                <li>Walaikum Assalam! Family tree ke baare mein poochho.</li>
+                <li>Wa Alaikum Assalam! Koi bhi family relation pooch sakte ho.</li>
+                <li>Walaikum Assalam! Batao, kya jaanna hai?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ASSALAM O ALAIKUM</pattern>
+        <template>
+            <random>
+                <li>Walaikum Assalam! Family ke baare mein kuch jaanna hai?</li>
+                <li>Wa Alaikum Assalam! Poochho jo bhi jaanna ho family tree se.</li>
+                <li>Walaikum Assalam! Kya khidmat kar sakta hoon?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>AOA</pattern>
+        <template>
+            <random>
+                <li>Walaikum Assalam! Family ke baare mein kya jaanna chahte ho?</li>
+                <li>Wa Alaikum Assalam! Batao kya poochna hai?</li>
+                <li>Walaikum Assalam! Koi family relation poochho.</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW ARE YOU</pattern>
+        <template>
+            <random>
+                <li>I am doing great! Ask me about the family.</li>
+                <li>All good! Ready to answer your family queries.</li>
+                <li>Feeling smart today! Go ahead and ask.</li>
+                <li>Perfect, as always! What do you want to know?</li>
+            </random>
+        </template>
+    </category>
+
+    <!-- ==================== HELP ==================== -->
+
+    <category>
+        <pattern>HELP</pattern>
+        <template>SYSTEM_HELP|</template>
+    </category>
+
+    <category>
+        <pattern>COMMANDS</pattern>
+        <template>SYSTEM_HELP|</template>
+    </category>
+
+    <!-- ==================== GOODBYE ==================== -->
+
+    <category>
+        <pattern>BYE</pattern>
+        <template>
+            <random>
+                <li>Allah Hafiz! Come back anytime.</li>
+                <li>Goodbye! Hope I was helpful.</li>
+                <li>Take care! Family tree is always here for you.</li>
+                <li>Allah Hafiz! See you next time.</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>EXIT</pattern>
+        <template>
+            <random>
+                <li>Allah Hafiz! Have a great day.</li>
+                <li>Goodbye! Come back with more questions.</li>
+                <li>Take care! Bye bye.</li>
+            </random>
+        </template>
+    </category>
+
+    <!-- ==================== RELATION QUERIES ==================== -->
+
+    <category>
+        <pattern>WHO IS THE * OF *</pattern>
+        <template>
+            <think>
+                <set name="rel"><star index="1"/></set>
+                <set name="p1"><star index="2"/></set>
+            </think>
+            STANDARD|
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHO IS * OF *</pattern>
+        <template>
+            <think>
+                <set name="rel"><star index="1"/></set>
+                <set name="p1"><star index="2"/></set>
+            </think>
+            STANDARD|
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS THE * OF *</pattern>
+        <template>
+            <think>
+                <set name="rel"><star index="1"/></set>
+                <set name="p1"><star index="2"/></set>
+            </think>
+            STANDARD|
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHO ARE THE * OF *</pattern>
+        <template>
+            <think>
+                <set name="rel"><star index="1"/></set>
+                <set name="p1"><star index="2"/></set>
+            </think>
+            STANDARD|
+        </template>
+    </category>
+
+    <!-- ==================== PARENTS ==================== -->
+
+    <category>
+        <pattern>WHO ARE THE PARENTS OF *</pattern>
+        <template>
+            <think><set name="p1"><star/></set></think>
+            PARENTS|
+        </template>
+    </category>
+
+    <category>
+        <pattern>PARENTS OF *</pattern>
+        <template>
+            <think><set name="p1"><star/></set></think>
+            PARENTS|
+        </template>
+    </category>
+
+    <!-- ==================== DOB / AGE ==================== -->
+
+    <category>
+        <pattern>WHEN WAS * BORN</pattern>
+        <template>
+            <think><set name="p1"><star/></set></think>
+            DOB|
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW OLD IS *</pattern>
+        <template>
+            <think><set name="p1"><star/></set></think>
+            DOB|
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS THE AGE OF *</pattern>
+        <template>
+            <think><set name="p1"><star/></set></think>
+            DOB|
+        </template>
+    </category>
+
+    <category>
+        <pattern>DOB OF *</pattern>
+        <template>
+            <think><set name="p1"><star/></set></think>
+            DOB|
+        </template>
+    </category>
+
+    <!-- ==================== BORN IN YEAR ==================== -->
+
+    <category>
+        <pattern>WHO WAS BORN IN *</pattern>
+        <template>
+            <think><set name="p1"><star/></set></think>
+            BORN_IN|
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHO WERE BORN IN *</pattern>
+        <template>
+            <think><set name="p1"><star/></set></think>
+            BORN_IN|
+        </template>
+    </category>
+
+    <!-- ==================== OLDER ==================== -->
+
+    <category>
+        <pattern>WHO IS OLDER * OR *</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            OLDER|
+        </template>
+    </category>
+
+    <category>
+        <pattern>IS * OLDER THAN *</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            OLDER_CHECK|
+        </template>
+    </category>
+
+    <!-- ==================== CONFIRM RELATION ==================== -->
+
+    <category>
+        <pattern>IS * THE * OF *</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="rel"><star index="2"/></set>
+                <set name="p2"><star index="3"/></set>
+            </think>
+            CONFIRM|
+        </template>
+    </category>
+
+    <category>
+        <pattern>IS * * OF *</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="rel"><star index="2"/></set>
+                <set name="p2"><star index="3"/></set>
+            </think>
+            CONFIRM|
+        </template>
+    </category>
+
+    <category>
+        <pattern>ARE * AND * MARRIED</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            MARRIED|
+        </template>
+    </category>
+
+    <category>
+        <pattern>ARE * AND * RELATED</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="rel">related</set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            CONFIRM|
+        </template>
+    </category>
+
+    <!-- ==================== IDENTITY ==================== -->
+
+    <category>
+        <pattern>WHO IS *</pattern>
+        <template>
+            <think><set name="p1"><star/></set></think>
+            IDENTITY|
+        </template>
+    </category>
+
+    <!-- ==================== LIST ALL ==================== -->
+
+    <category>
+        <pattern>LIST ALL *</pattern>
+        <template>
+            <think><set name="rel"><star/></set></think>
+            LIST_ALL|
+        </template>
+    </category>
+
+    <category>
+        <pattern>SHOW ALL *</pattern>
+        <template>
+            <think><set name="rel"><star/></set></think>
+            LIST_ALL|
+        </template>
+    </category>
+
+    <!-- ==================== GENDER CHECK ==================== -->
+
+    <category>
+        <pattern>IS * A MALE</pattern>
+        <template>
+            <think>
+                <set name="p1"><star/></set>
+                <set name="rel">male</set>
+            </think>
+            GENDER|
+        </template>
+    </category>
+
+    <category>
+        <pattern>IS * A FEMALE</pattern>
+        <template>
+            <think>
+                <set name="p1"><star/></set>
+                <set name="rel">female</set>
+            </think>
+            GENDER|
+        </template>
+    </category>
+
+    <!-- ==================== MARRIED CHECK ==================== -->
+
+    <category>
+        <pattern>WHO IS * MARRIED TO</pattern>
+        <template>
+            <think><set name="p1"><star/></set></think>
+            MARRIED|
+        </template>
+    </category>
+
+    <category>
+        <pattern>IS * MARRIED</pattern>
+        <template>
+            <think><set name="p1"><star/></set></think>
+            MARRIED|
+        </template>
+    </category>
+
+    <!-- ==================== FALLBACK ==================== -->
+
+    <category>
+        <pattern>*</pattern>
+        <template>
+            <random>
+                <li>I did not understand that. Type HELP to see what I can answer.</li>
+                <li>Hmm, I am not sure about that. Try asking differently.</li>
+                <li>Sorry, I could not process that. Type HELP for examples.</li>
+                <li>I did not get that. Can you rephrase your question?</li>
+            </random>
+        </template>
+    </category>
+
+</aiml>

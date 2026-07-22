@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+    <category>
+        <pattern>MY NAME IS *</pattern>
+        <template>
+            <think><set name="p1"><star/></set></think>
+            ADD_MALE|
+        </template>
+    </category>
+
+    <category>
+        <pattern>ADD MALE *</pattern>
+        <template>
+            <think><set name="p1"><star/></set></think>
+            ADD_MALE|
+        </template>
+    </category>
+
+    <category>
+        <pattern>* IS A MALE</pattern>
+        <template>
+            <think><set name="p1"><star/></set></think>
+            ADD_MALE|
+        </template>
+    </category>
+
+    <category>
+        <pattern>* IS MALE</pattern>
+        <template>
+            <think><set name="p1"><star/></set></think>
+            ADD_MALE|
+        </template>
+    </category>
+
+    <category>
+        <pattern>* IS A BOY</pattern>
+        <template>
+            <think><set name="p1"><star/></set></think>
+            ADD_MALE|
+        </template>
+    </category>
+
+    <category>
+        <pattern>* IS A MAN</pattern>
+        <template>
+            <think><set name="p1"><star/></set></think>
+            ADD_MALE|
+        </template>
+    </category>
+
+    <category>
+        <pattern>REGISTER * AS MALE</pattern>
+        <template>
+            <think><set name="p1"><star/></set></think>
+            ADD_MALE|
+        </template>
+    </category>
+
+    <category>
+        <pattern>HER NAME IS *</pattern>
+        <template>
+            <think><set name="p1"><star/></set></think>
+            ADD_FEMALE|
+        </template>
+    </category>
+
+    <category>
+        <pattern>ADD FEMALE *</pattern>
+        <template>
+            <think><set name="p1"><star/></set></think>
+            ADD_FEMALE|
+        </template>
+    </category>
+
+    <category>
+        <pattern>* IS A FEMALE</pattern>
+        <template>
+            <think><set name="p1"><star/></set></think>
+            ADD_FEMALE|
+        </template>
+    </category>
+
+    <category>
+        <pattern>* IS FEMALE</pattern>
+        <template>
+            <think><set name="p1"><star/></set></think>
+            ADD_FEMALE|
+        </template>
+    </category>
+
+    <category>
+        <pattern>* IS A GIRL</pattern>
+        <template>
+            <think><set name="p1"><star/></set></think>
+            ADD_FEMALE|
+        </template>
+    </category>
+
+    <category>
+        <pattern>* IS A WOMAN</pattern>
+        <template>
+            <think><set name="p1"><star/></set></think>
+            ADD_FEMALE|
+        </template>
+    </category>
+
+    <category>
+        <pattern>REGISTER * AS FEMALE</pattern>
+        <template>
+            <think><set name="p1"><star/></set></think>
+            ADD_FEMALE|
+        </template>
+    </category>
+
+    <category>
+        <pattern>ADD DOB * *</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            ADD_DOB|
+        </template>
+    </category>
+
+    <category>
+        <pattern>* WAS BORN IN *</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            ADD_DOB|
+        </template>
+    </category>
+
+    <category>
+        <pattern>* IS BORN IN *</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            ADD_DOB|
+        </template>
+    </category>
+
+    <category>
+        <pattern>DOB OF * IS *</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            ADD_DOB|
+        </template>
+    </category>
+
+    <category>
+        <pattern>DATE OF BIRTH OF * IS *</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            ADD_DOB|
+        </template>
+    </category>
+
+    <category>
+        <pattern>ADD PARENT * *</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            ADD_PARENT|
+        </template>
+    </category>
+
+    <category>
+        <pattern>* IS THE PARENT OF *</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            ADD_PARENT|
+        </template>
+    </category>
+
+    <category>
+        <pattern>* IS PARENT OF *</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            ADD_PARENT|
+        </template>
+    </category>
+
+    <category>
+        <pattern>* IS THE FATHER OF *</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            ADD_FATHER|
+        </template>
+    </category>
+
+    <category>
+        <pattern>* IS FATHER OF *</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            ADD_FATHER|
+        </template>
+    </category>
+
+    <category>
+        <pattern>* IS THE MOTHER OF *</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            ADD_MOTHER|
+        </template>
+    </category>
+
+    <category>
+        <pattern>* IS MOTHER OF *</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            ADD_MOTHER|
+        </template>
+    </category>
+
+    <category>
+        <pattern>* IS MARRIED TO *</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            ADD_MARRIED|
+        </template>
+    </category>
+
+    <category>
+        <pattern>MARRY * AND *</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            ADD_MARRIED|
+        </template>
+    </category>
+
+    <category>
+        <pattern>* AND * ARE MARRIED TO EACH OTHER</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            ADD_MARRIED|
+        </template>
+    </category>
+
+    <category>
+        <pattern>ADD SIBLING * *</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            ADD_SIBLING|
+        </template>
+    </category>
+
+    <category>
+        <pattern>* IS THE SIBLING OF *</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            ADD_SIBLING|
+        </template>
+    </category>
+
+    <category>
+        <pattern>* IS SIBLING OF *</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            ADD_SIBLING|
+        </template>
+    </category>
+
+    <category>
+        <pattern>* AND * ARE SIBLINGS</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            ADD_SIBLING|
+        </template>
+    </category>
+
+    <category>
+        <pattern>* IS THE BROTHER OF *</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            ADD_BROTHER|
+        </template>
+    </category>
+
+    <category>
+        <pattern>* IS BROTHER OF *</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            ADD_BROTHER|
+        </template>
+    </category>
+
+    <category>
+        <pattern>* IS THE SISTER OF *</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            ADD_SISTER|
+        </template>
+    </category>
+
+    <category>
+        <pattern>* IS SISTER OF *</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            ADD_SISTER|
+        </template>
+    </category>
+
+        <category>
+        <pattern>* IS THE FRIEND OF *</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            ADD_FRIEND|
+        </template>
+    </category>
+
+    <category>
+        <pattern>* IS FRIEND OF *</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            ADD_FRIEND|
+        </template>
+    </category>
+
+    <category>
+        <pattern>* IS A FRIEND OF *</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            ADD_FRIEND|
+        </template>
+    </category>
+
+    <category>
+        <pattern>* AND * ARE FRIENDS</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            ADD_FRIEND|
+        </template>
+    </category>
+
+    <category>
+        <pattern>* AND * ARE FRIENDS WITH EACH OTHER</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            ADD_FRIEND|
+        </template>
+    </category>
+
+    <category>
+        <pattern>* IS FRIENDS WITH *</pattern>
+        <template>
+            <think>
+                <set name="p1"><star index="1"/></set>
+                <set name="p2"><star index="2"/></set>
+            </think>
+            ADD_FRIEND|
+        </template>
+    </category>
+
+    <category>
+        <pattern>SHOW FACTS</pattern>
+        <template>SHOW_FACTS|</template>
+    </category>
+
+    <category>
+        <pattern>SHOW KB</pattern>
+        <template>SHOW_FACTS|</template>
+    </category>
+
+    <category>
+        <pattern>LIST FACTS</pattern>
+        <template>SHOW_FACTS|</template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS IN THE KB</pattern>
+        <template>SHOW_FACTS|</template>
+    </category>
+
+    <category>
+        <pattern>SHOW GRAPH STATUS</pattern>
+        <template>SHOW_FACTS|</template>
+    </category>
+
+</aiml>
