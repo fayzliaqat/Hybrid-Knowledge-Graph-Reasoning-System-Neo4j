@@ -672,21 +672,11 @@ This project is designed for local academic use. Do not store sensitive real-wor
 
 ## 📄 Documentation
 
-The academic project report can be included as:
+The academic project report is included as:
 
 ```text
 docs/project-report.pdf
 ```
-
-Before publishing it, remove or obscure:
-
-- student registration numbers;
-- private database credentials;
-- personal contact details.
-
-The original assignment guideline should not be uploaded because it is not part of the implemented project.
-
----
 
 ## ✅ Current Status
 
